@@ -72,7 +72,7 @@ MY_LIBS   =
 
 # The executable file name.
 # If not specified, current directory name or `demo.out' will be used.
-PROGRAM   = demo.out
+PROGRAM   = demo
 
 ## Implicit Section: change the following only when necessary.
 ##==========================================================================
@@ -119,7 +119,7 @@ ifeq ($(PROGRAM),)
   CUR_PATH_NAMES = $(subst /,$(SPACE),$(subst $(SPACE),_,$(CURDIR)))
   PROGRAM = $(word $(words $(CUR_PATH_NAMES)),$(CUR_PATH_NAMES))
   ifeq ($(PROGRAM),)
-    PROGRAM = demo.out
+    PROGRAM = demo
   endif
 endif
 ifeq ($(SRCDIRS),)
@@ -240,7 +240,10 @@ endif
 
 clean:
 	$(RM) $(RMDEPS) $(RMOBJS)
-	$(RM) $(PROGRAM) $(foreach d,$(PROGRAM),$(addprefix $(d),.exe))
+	$(RM) $(PROGRAM)
+
+distclean:
+	$(RM)  $(SRCROOT)/*.d  $(SRCROOT)/*.o
 
 # Show help.
 help:
