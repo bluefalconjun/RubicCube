@@ -243,7 +243,7 @@ clean:
 	$(RM) $(PROGRAM)
 
 distclean:
-	$(RM)  $(SRCROOT)/*.d  $(SRCROOT)/*.o
+	$(RM)  $(SRCROOT)/*.d  $(SRCROOT)/*.o $(SRCROOT)/$(PROGRAM)
 
 # Show help.
 help:
