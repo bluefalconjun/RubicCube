@@ -1,0 +1,8 @@
+{
+    "LogInfo_limit":
+    [
+        {"UnitSize":"K","UnitNum":"128",}
+    ],
+    "LogInfo_count":"4",
+    "LogFile_limit":"5",
+}

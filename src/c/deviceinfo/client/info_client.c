@@ -4,7 +4,9 @@
 /* Copyright (c) 2016 Montage Technology Group Limited and its affiliated
  * companies         */
 /********************************************************************************************/
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+#include "info_client.h"
 
+int main() {
+  // printf("test!\n");
+  return 0;
+}

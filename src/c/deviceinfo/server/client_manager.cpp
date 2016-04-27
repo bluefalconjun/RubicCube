@@ -1,0 +1,1 @@
+/*client manager for manage the connectted client list*/

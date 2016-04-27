@@ -1,0 +1,1 @@
+/*recv and record the devinfo from client*/

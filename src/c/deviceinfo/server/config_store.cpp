@@ -1,0 +1,1 @@
+/*config store to dispatch the config to client*/

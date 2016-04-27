@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Server>
+    <IPAddr>192.168.1.100</IPAddr>
+    <Domain>www.device.com</Domain>
+    <ConfigPort>5011</ConfigPort>
+    <RecordPort>5012</RecordPort>
+</Server>
