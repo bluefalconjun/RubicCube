@@ -3,7 +3,22 @@
 #include "server_main.h"
 
 int main(int argc, char **argv) {
-  ClientManager curClient = new ClientManager;
-  delete (curClient);
+  
+  pClientManager = new ClientManager;
+  pConfigStore = new ConfigStore;
+  pInfoRecorder = new InfoRecorder;
+
+
+  pClientManager->init();
+  pConfigStore->init();
+  pInfoRecorder->init();
+
+  pInfoRecorder->start();
+  pConfigStore->start();
+  pCLientManager->start()
+
+  delete (pClientManager);
+  delete (pConfigStore);
+  delete (pInfoRecorder);
   return 0;
 }
