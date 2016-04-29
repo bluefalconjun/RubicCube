@@ -65,7 +65,7 @@ SRCDIR    =
 RECURSION = 1
 
 # The pre-processor and compiler options.
-MY_CFLAGS = -I./inc
+MY_CFLAGS = -I./inc -std=c++11 -Llibstdc++ -pthread
 
 # The linker options.
 MY_LIBS   =

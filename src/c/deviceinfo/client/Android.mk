@@ -10,7 +10,8 @@ LOCAL_SRC_FILES := \
 	info_client.c \
 	info_recorder.c \
 	loginfo_filter.c \
-	loginfo_wrapper.c
+	loginfo_wrapper.c \
+	client_main.c
 
 LOCAL_C_INCLUDES += $(LOCAL_PATH)/inc
 
@@ -23,6 +24,6 @@ ifdef USE_JSMN_CONFIG
 LOCAL_SHARED_LIBRARIES = libjsmn
 endif
 
-LOCAL_CFLAGS += -Werror
+LOCAL_CFLAGS +=
 
 include $(BUILD_EXECUTABLE)

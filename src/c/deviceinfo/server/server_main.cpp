@@ -1,24 +1,22 @@
+/********************************************************************************************/
+/* Copyright (c) 2014 Montage Technology Group Limited and its affiliated companies         */
+/* Montage Proprietary and Confidential                                                     */
+/* Montage Technology (Shanghai) Co., Ltd.                                                  */
+/********************************************************************************************/
+/********************************************************************************************/
+/* Copyright (c) 2014 Montage Technology Group Limited and its affiliated companies         */
+/* Montage Proprietary and Confidential                                                     */
+/* Montage Technology (Shanghai) Co., Ltd.                                                  */
+/********************************************************************************************/
 /*server main process*/
 
 #include "server_main.h"
 
-int main(int argc, char **argv) {
-  
-  pClientManager = new ClientManager;
-  pConfigStore = new ConfigStore;
-  pInfoRecorder = new InfoRecorder;
+int main(int argc, char** argv) {
+  InfoRecorder* curInfoRecorder = new InfoRecorder;
+  curInfoRecorder->init();
+  curInfoRecorder->startloop();
 
-
-  pClientManager->init();
-  pConfigStore->init();
-  pInfoRecorder->init();
-
-  pInfoRecorder->start();
-  pConfigStore->start();
-  pCLientManager->start()
-
-  delete (pClientManager);
-  delete (pConfigStore);
-  delete (pInfoRecorder);
+  printf("Will Never See This !!\n");
   return 0;
 }
